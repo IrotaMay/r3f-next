@@ -46,6 +46,11 @@
   resolved "https://registry.yarnpkg.com/@chevrotain/utils/-/utils-10.5.0.tgz#0ee36f65b49b447fbac71b9e5af5c5c6c98ac057"
   integrity sha512-hBzuU5+JjB2cqNZyszkDHZgOSrUUT8V3dhgRl8Q9Gp6dAj/H5+KILGjbhDpc3Iy9qmqlm/akuOI2ut9VUtzJxQ==
 
+"@dimforge/rapier3d-compat@0.11.2":
+  version "0.11.2"
+  resolved "https://registry.yarnpkg.com/@dimforge/rapier3d-compat/-/rapier3d-compat-0.11.2.tgz#ae2b335f545decf1e82ff45bb10368e143de0fcb"
+  integrity sha512-vdWmlkpS3G8nGAzLuK7GYTpNdrkn/0NKCe0l1Jqxc7ZZOB3N0q9uG/Ap9l9bothWuAvxscIt0U97GVLr0lXWLg==
+
 "@eslint-community/eslint-utils@^4.2.0":
   version "4.4.0"
   resolved "https://registry.yarnpkg.com/@eslint-community/eslint-utils/-/eslint-utils-4.4.0.tgz#a23514e8fb9af1269d5f7788aa556798d61c6b59"
@@ -326,6 +331,15 @@
     n8ao "^1.6.6"
     postprocessing "^6.32.1"
     three-stdlib "^2.23.4"
+
+"@react-three/rapier@^1.1.1":
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@react-three/rapier/-/rapier-1.1.1.tgz#7813b90958c764f05cca69fe6c5c309d76c3accd"
+  integrity sha512-DlMHJRIErr9753C4CO3V06rgrP4b5/LyDnwzeNOCPrWgasILbkjYIe37RcQ+MZN2n6YpmQNSFD3WpnU9XD/QxA==
+  dependencies:
+    "@dimforge/rapier3d-compat" "0.11.2"
+    three-stdlib "2.23.9"
+    use-asset "1.0.4"
 
 "@rushstack/eslint-patch@^1.1.3":
   version "1.3.2"
@@ -2764,6 +2778,23 @@ three-mesh-bvh@^0.6.0:
   resolved "https://registry.yarnpkg.com/three-mesh-bvh/-/three-mesh-bvh-0.6.3.tgz#c387d6ae7faf1c5a1caf0643c19535dab27d707b"
   integrity sha512-xjuGLSI9nBATIsWcT/DnnNma5xXYyvBiXfUbhGLAFqItOlOKYF5JWsUOX+cuSAnSWovEoHzd5Emx23qKiByrlw==
 
+three-stdlib@2.23.9:
+  version "2.23.9"
+  resolved "https://registry.yarnpkg.com/three-stdlib/-/three-stdlib-2.23.9.tgz#09c74fc6acced3d124e4f9d695156136c587a355"
+  integrity sha512-fYBClVGQptD7UZcoRZGNlR3sKcUW37hVPoEW1v68E4XuiwD0Ml/VqDUJ0yEMVE2DlooDvqgqv/rIcHC/B4N5pg==
+  dependencies:
+    "@types/draco3d" "^1.4.0"
+    "@types/offscreencanvas" "^2019.6.4"
+    "@types/webxr" "^0.5.2"
+    chevrotain "^10.1.2"
+    draco3d "^1.4.1"
+    fflate "^0.6.9"
+    ktx-parse "^0.4.5"
+    mmd-parser "^1.0.4"
+    opentype.js "^1.3.3"
+    potpack "^1.0.1"
+    zstddec "^0.0.2"
+
 three-stdlib@^2.23.4, three-stdlib@^2.23.9:
   version "2.23.13"
   resolved "https://registry.yarnpkg.com/three-stdlib/-/three-stdlib-2.23.13.tgz#2647b9b6b93e9a257efb6d14c1b9af7a0f938439"
@@ -2940,6 +2971,13 @@ uri-js@^4.2.2:
   integrity sha512-7rKUyy33Q1yc98pQ1DAmLtwX109F7TIfWlW1Ydo8Wl1ii1SeHieeh0HHfPeL2fMXK6z0s8ecKs9frCuLJvndBg==
   dependencies:
     punycode "^2.1.0"
+
+use-asset@1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/use-asset/-/use-asset-1.0.4.tgz#506caafc29f602890593799e58b577b70293a6e2"
+  integrity sha512-7/hqDrWa0iMnCoET9W1T07EmD4Eg/Wmoj/X8TGBc++ECRK4m5yTsjP4O6s0yagbxfqIOuUkIxe2/sA+VR2GxZA==
+  dependencies:
+    fast-deep-equal "^3.1.3"
 
 util-deprecate@^1.0.2:
   version "1.0.2"
