@@ -11,7 +11,6 @@ type Props = {
 
 export default function NavigationItem({ href, name }: Props) {
   const router = usePathname();
-  console.log(router);
   return (
     <Link
       href={href}
