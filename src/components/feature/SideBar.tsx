@@ -1,7 +1,18 @@
-export default function SideBar() {
+import NavigationItem from "../ui/NavigationItem";
+
+type SideBarProps = {
+  pages: {
+    href: string;
+    name: string;
+  }[];
+};
+
+export default function SideBar({ pages }: SideBarProps) {
   return (
-    <aside className="w-1/5 bg-gray-800">
-      <h1 className="text-6xl font-bold">Hello World</h1>
-    </aside>
+    <nav className="w-64 bg-gray-900 p-5">
+      {pages.map((page) => (
+        <NavigationItem key={page.href} {...page} />
+      ))}
+    </nav>
   );
 }
