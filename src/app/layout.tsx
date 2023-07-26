@@ -13,6 +13,7 @@ export const metadata: Metadata = {
 const pages = [
   { href: "/", name: "Home" },
   { href: "/cube", name: "Cube" },
+  { href: "/bubble", name: "Bubble" },
 ];
 
 export default function RootLayout({

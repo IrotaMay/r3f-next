@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Pink Cube",
-  description: "Pink Cube with orbitControls",
+  title: "Bubble",
+  description: "Bubble action by mouse move",
 };
 
 export default function RootLayout({
