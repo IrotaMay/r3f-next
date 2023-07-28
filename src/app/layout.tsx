@@ -15,6 +15,7 @@ const pages = [
   { href: "/cube", name: "Cube" },
   { href: "/bubble", name: "Bubble" },
   { href: "/magicbox", name: "MagicBox" },
+  { href: "/ocean", name: "Ocean" },
 ];
 
 export default function RootLayout({
