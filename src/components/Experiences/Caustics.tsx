@@ -138,6 +138,7 @@ export default function Caustic() {
       eventPrefix='client'
       camera={{position: [20, 0.9, 20], fov: 26}}
     >
+      {/* パフォーマンス低下時にアニメーション停止 */}
       {/* <PerformanceMonitor onDecline={() => setPerfSucks(true)} /> */}
       <color attach="background" args={['#f0f0f0']} />
       <group position={[0, -0.5, 0]} rotation={[0, -0.75, 0]}>
