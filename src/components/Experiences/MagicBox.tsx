@@ -1,6 +1,6 @@
 "use client";
 
-import { use, useRef } from "react";
+import { useRef } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import {
   useGLTF,
