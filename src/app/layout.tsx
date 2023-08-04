@@ -18,6 +18,7 @@ const pages = [
   { href: "/ocean", name: "Ocean" },
   { href: "/godray", name: "Godray" },
   { href: "/caustics", name: "Caustics" },
+  { href: "/lens", name: "Lens" },
 ];
 
 export default function RootLayout({
